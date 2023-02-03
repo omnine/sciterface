@@ -24,6 +24,7 @@
     <ProjectGuid>{492d603e-f51c-479f-96cf-255b7c7ce2b7}</ProjectGuid>
     <RootNamespace>HelloWorld</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SciterFace</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -151,7 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="E:\oslib\sciter-js-sdk-main\include\sciter-win-main.cpp" />
-    <ClCompile Include="HelloWorld.cpp" />
+    <ClCompile Include="SciterFace.cpp" />
     <ClCompile Include="resources.cpp" />
   </ItemGroup>
   <ItemGroup>
