@@ -22,7 +22,7 @@ int uimain(std::function<int()> run) {
 	frame* pwin = new frame();
 
 	// note: this:://app URL is dedicated to the sciter::archive content associated with the application
-	pwin->load(WSTR("this://app/main.html"));
+	pwin->load(WSTR("this://app/main.htm"));
 
 	pwin->expand();
 
