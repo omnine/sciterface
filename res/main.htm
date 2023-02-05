@@ -1,18 +1,24 @@
 <html>
     <head>
         <title>G4</title>
-        <style></style>
-        <script type="text/tiscript"></script>
-        
-    <script type="module">
-        import LogonBox from "./main.js";
-        document.on("ready", () => {
+        <style src="main.css" />  
+        <script type="module">
+            import LogonBox from "./main.js";
+            document.on("ready", () => {
 
-        // add simplest component to interface
-        document.$("div#logonbox").content(<LogonBox name="8ctopus" />);
+            // add simplest component to interface
+            document.$("div#logonbox").content(<LogonBox loginname="nanoart" />);
 
-        });
-    </script>        
+            });
+
+            document.on("keyup", function (evt) {
+                if(evt.code == "KeyF5") {
+                Window.this.load(location.href);
+                return true; // consume it
+                }
+            });
+
+        </script>        
         
         
     </head>

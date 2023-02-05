@@ -155,9 +155,6 @@
     <ClCompile Include="SciterFace.cpp" />
     <ClCompile Include="resources.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="res\main.html" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
