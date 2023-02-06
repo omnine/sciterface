@@ -1,5 +1,7 @@
 /*JavaScript*/
 
+import OneTimePassword from "./one-time-password.js";
+
 export default function LogonBox(props) {
       return (<div>
         <div>
@@ -23,12 +25,8 @@ export default function LogonBox(props) {
             <option value="spider">Spider</option>
             <option value="goldfish">Goldfish</option>
         </select>
-        <div>
-            <label for="otp">One Time Password:</label>
 
-            <input type="text" id="otp" name="otp" required
-                   minlength="4" maxlength="8" size="10"/>
-        </div>
+        <OneTimePassword />
         <div>
             <button>
                 <svg aria-hidden="true" viewBox="0 0 10 10">
