@@ -1,1 +1,6 @@
 .input:empty { color: red; }
+
+logon-box {
+    prototype: LogonBox url(main.js);
+    display:block;
+  }
