@@ -9,3 +9,8 @@ logon-box {
     prototype: OnDemandPassword url(on-demand-password.js);
     display:block;
   }
+
+  .sprite{
+	image-rendering: optimize-quality;
+
+}

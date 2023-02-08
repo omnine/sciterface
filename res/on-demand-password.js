@@ -6,7 +6,12 @@ export default class OnDemandPassword extends Element
   }
 
   render() {
-    return <div id="authenticator">OnDemandPassword!</div>;
+    return (<div id="authenticator">
+      <img src="sms.png" width="64" height="64" class="sprite"/>
+      <img src="email.png" width="64" height="64" class="sprite"/>
+      <img src="telephone.png" width="64" height="64" class="sprite"/>
+      <img src="twitter.png" width="64" height="64" class="sprite"/>
+    </div>);
 }
 }
 
