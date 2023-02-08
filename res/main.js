@@ -35,8 +35,9 @@ export class LogonBox extends Element {
             <option value="spider">Spider</option>
             <option value="goldfish">Goldfish</option>
         </select>
+        <div id="authenticator"></div>
 
-        <OneTimePassword />
+        
         <div>
             <button>
                 <svg aria-hidden="true" viewBox="0 0 10 10">
@@ -64,6 +65,12 @@ export class LogonBox extends Element {
     ["on change at select"](_event, select) {
         console.log(_event.target.value);
         console.log(select.value);
+//        const velement = <div id="root"><h1>Hello, world</h1></div>;
+        document.$("div#authenticator").patch(<OneTimePassword />);
+        //we can just update the corresponding authenticator element
+//        let elem = evt.target;
+//        let title = elem.state.checked ? "checked" : "unchecked"; 
+//        elem.componentUpdate({title: title});
         //this.showSuggestionsFor(input.value);
     }    
 }
