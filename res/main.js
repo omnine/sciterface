@@ -26,14 +26,11 @@ export class LogonBox extends Element {
                    minlength="4" maxlength="8" size="10"/>
         </div>
 
-        <select name="pets" id="pet-select">
+        <select name="Authenticators" id="authenticator-select">
             <option value="">--Please choose an option--</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
+            <option value="password">Password</option>
+            <option value="otp">One Time Password</option>
+            <option value="odp">On Demand Password</option>
         </select>
         <div id="authenticator"></div>
 
