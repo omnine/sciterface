@@ -75,7 +75,15 @@ export class LogonBox extends Element {
 //        let title = elem.state.checked ? "checked" : "unchecked"; 
 //        elem.componentUpdate({title: title});
         //this.showSuggestionsFor(input.value);
-    }    
+    }
+
+    ["on click at button"](_event, _element) {
+        var url = URL.fromPath("dnalogon.png");
+        document.$("img#logo").attributes["src"] = url;
+    }
+
+
+
 }
 
 /*
