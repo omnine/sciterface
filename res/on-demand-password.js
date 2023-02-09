@@ -12,10 +12,46 @@ export default class OnDemandPassword extends Element
       <img src="telephone.png" width="64" height="64" class="sprite"/>
       <img src="twitter.png" width="64" height="64" class="sprite"/>
     </div>);
-}
+  }
+
+    /**
+     * On img click event
+     * @param {object} _event
+     * @param {Element} _element
+     */
+  ["on click at img"](_event, _element) {
+    fetch('http://www.user.com/index.php',{
+      method:'POST',ache:'no-cache',headers:{
+      //'Content-Type': 'application/json'
+      'Content-Type':'application/x-www-form-urlencoded',
+      },body:formData
+    }).then(function(response){
+      out(response.status)
+      return response.json();
+    }).then(function(data){
+      out(data)
+    }).catch(function(error){
+      //some ..
+    })
+  }
+
 }
 
 /*
+const formData = {};
+ 
+formData.username = 'abc123';
+formData.avatar = theFileToUpload;
+
+await fetch('https://example.com/profile/avatar', {
+  method: 'POST',
+  body: formData
+});
+
+
+
+
+
 export default function OneTimePassword(attributes) {
   return (
   <div>

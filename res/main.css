@@ -3,14 +3,24 @@
 logon-box {
     prototype: LogonBox url(main.js);
     display:block;
-  }
+}
 
-  on-demand-password {
-    prototype: OnDemandPassword url(on-demand-password.js);
-    display:block;
-  }
+on-demand-password {
+  prototype: OnDemandPassword url(on-demand-password.js);
+  display:block;
+}
 
-  .sprite{
+.sprite{
 	image-rendering: optimize-quality;
 
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
