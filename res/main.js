@@ -84,6 +84,8 @@ export class LogonBox extends Element {
 
         //https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/Window.md
         Window.this.modal(<info>test</info>);
+
+//        var [sx,sy,sw,sh] = Window.this.screenBox("workarea","rect"); // gettting screen/monitor size
     }
 
 
