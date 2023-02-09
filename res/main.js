@@ -79,7 +79,11 @@ export class LogonBox extends Element {
 
     ["on click at button"](_event, _element) {
         var url = URL.fromPath("dnalogon.png");
+        //should we loadImage first?
         document.$("img#logo").attributes["src"] = url;
+
+        //https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/Window.md
+        Window.this.modal(<info>test</info>);
     }
 
 
