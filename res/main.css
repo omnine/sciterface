@@ -61,3 +61,14 @@ on-demand-password {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+
+.dot {
+  background: blue;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flow: horizontal;
+  align-items: center;
+  text-align: center;
+}
