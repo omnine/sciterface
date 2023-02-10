@@ -79,7 +79,6 @@ on-demand-password {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  flow: horizontal;
   align-items: center;
   text-align: center;
 }
