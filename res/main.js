@@ -30,7 +30,6 @@ export class LogonBox extends Element {
         <div style="text-align: center; margin: 0.4rem;">
             <select name="Authenticators" id="authenticator-select">
                 <option value="">--Please choose an option--</option>
-                <option value="password">Password</option>
                 <option value="otp">One Time Password</option>
                 <option value="odp">On Demand Password</option>
                 <option value="ooba">Out of Band Push</option>
