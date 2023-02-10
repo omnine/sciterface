@@ -15,29 +15,32 @@ export class LogonBox extends Element {
 
     render() {
         const component = <div>
-        <div>
+        <div style="text-align: center;">
             <label >Name:
                 <input type="text" size="30" novalue="Enter your login name" value={this.attributes["loginname"]} disabled/>
             </label>
             
-        <div>
+        <div style="text-align: center;">
             <label for="password">Password:</label>
 
             <input type="password" id="password" name="password" required
                    minlength="4" maxlength="8" size="30"/>
         </div>
 
-        <select name="Authenticators" id="authenticator-select">
-            <option value="">--Please choose an option--</option>
-            <option value="password">Password</option>
-            <option value="otp">One Time Password</option>
-            <option value="odp">On Demand Password</option>
-            <option value="ooba">Out of Band Push</option>
-        </select>
-        <div id="authenticator"></div>
+        <div style="text-align: center; margin: 0.4rem;">
+            <select name="Authenticators" id="authenticator-select">
+                <option value="">--Please choose an option--</option>
+                <option value="password">Password</option>
+                <option value="otp">One Time Password</option>
+                <option value="odp">On Demand Password</option>
+                <option value="ooba">Out of Band Push</option>
+            </select>
+        </div>
+
+        <div id="authenticator" style="text-align: center; margin: 0.4rem;"></div>
 
         
-        <div>
+        <div style="text-align: center; margin: 0.4rem;">
             <button style="width:200px">
                 <svg aria-hidden="true" viewBox="0 0 10 10">
                 <path d="M7 9L5 8 3 9V6L1 4h3l1-3 1 3h3L7 6z" />

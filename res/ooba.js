@@ -1,6 +1,6 @@
 export default function OOBA(attributes) {
   return (
-  <div id="authenticator">
+  <div id="authenticator" style="text-align: center; margin: 0.4rem;">
     <fieldset>
         <legend>Select a mobile phone:</legend>
 
