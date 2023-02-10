@@ -27,6 +27,8 @@ on-demand-password {
 }
 
 .footer {
+  flow: horizontal;
+  horizontal-align:right;
   position: absolute;
   right: 0;
   bottom: 0;
