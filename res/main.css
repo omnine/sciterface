@@ -85,6 +85,13 @@ on-demand-password {
   text-align: center;
 }
 
-#status {
-  flow: horizontal;
+
+.container {
+  width: 100%;
+  height: 70px;
+  text-align: center;  /* align center all inline elements */
+  border: 1px solid red;
+}
+.resize_fit_center {
+  height: 60px;
 }
