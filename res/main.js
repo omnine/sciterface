@@ -2,6 +2,7 @@
 
 import OneTimePassword from "./one-time-password.js";
 import OnDemandPassword from "./on-demand-password.js";
+import OOBA from "./ooba.js";
 
 
 export class LogonBox extends Element {
@@ -31,6 +32,7 @@ export class LogonBox extends Element {
             <option value="password">Password</option>
             <option value="otp">One Time Password</option>
             <option value="odp">On Demand Password</option>
+            <option value="ooba">Out of Band Push</option>
         </select>
         <div id="authenticator"></div>
 
@@ -67,9 +69,11 @@ export class LogonBox extends Element {
             document.$("div#authenticator").patch(<OneTimePassword />);
         }
         else if (select.value == "odp") {
-            console.log("hello mike");
             document.$("div#authenticator").patch(<OnDemandPassword />);
         }
+        else if (select.value == "ooba") {
+            document.$("div#authenticator").patch(<OOBA />);
+        }        
         //we can just update the corresponding authenticator element
 //        let elem = evt.target;
 //        let title = elem.state.checked ? "checked" : "unchecked"; 

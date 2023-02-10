@@ -1,4 +1,9 @@
-.input:empty { color: red; }
+input:empty { color: red; }
+
+input {
+  margin: 0.4rem;
+}
+
 .center {
   border: 1px solid;
   margin: auto;
