@@ -82,3 +82,7 @@ on-demand-password {
   align-items: center;
   text-align: center;
 }
+
+#status {
+  flow: horizontal;
+}
