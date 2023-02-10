@@ -1,4 +1,10 @@
 .input:empty { color: red; }
+.center {
+  border: 1px solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
 
 logon-box {
     prototype: LogonBox url(main.js);
