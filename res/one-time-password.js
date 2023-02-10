@@ -13,6 +13,6 @@ export default function OneTimePassword(attributes) {
     <label for="otp">One Time Password:</label>
 
     <input type="text" id="otp" name="otp" required
-           minlength="4" maxlength="8" size="10"/>
+           minlength="4" maxlength="8" size="20"/>
   </div>);
 }
