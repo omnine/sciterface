@@ -40,7 +40,7 @@ export class LogonBox extends Element {
 
         
         <div style="text-align: center; margin: 0.4rem;">
-            <button style="width:200px">
+            <button id="submit" style="width:200px">
                 <svg aria-hidden="true" viewBox="0 0 10 10">
                 <path d="M7 9L5 8 3 9V6L1 4h3l1-3 1 3h3L7 6z" />
                 </svg>
@@ -83,18 +83,15 @@ export class LogonBox extends Element {
         //this.showSuggestionsFor(input.value);
     }
 
-    ["on click at button"](_event, _element) {
+    ["on click at button#submit"](_event, _element) {
         var url = URL.fromPath("dnalogon.png");
         //should we loadImage first?
         document.$("img#logo").attributes["src"] = url;
-
         //https://github.com/c-smile/sciter-js-sdk/blob/main/docs/md/Window.md
         Window.this.modal(<info>test</info>);
 
 //        var [sx,sy,sw,sh] = Window.this.screenBox("workarea","rect"); // gettting screen/monitor size
     }
-
-
 
 }
 

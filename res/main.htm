@@ -1,23 +1,30 @@
 <html>
     <head>
         <title>G4</title>
-        <style src="main.css" />  
-        <script type="module">
-            import LogonBox from "./main.js";
+        <style src="main.css" /> 
+        <script>
             document.on("ready", () => {
-
             // add simplest component to interface
 //            document.$("div#logonbox").content(<LogonBox loginname="nanoart" />);
+                document.on("keyup", function (evt) {
+                    if(evt.code == "KeyF5") {
+                    Window.this.load(location.href);
+                    return true; // consume it
+                    }
+                });
+                
+                document.on("click", "button#info", function() {
+                    console.log("info button click");
+                    document.$("div#message").patch(<div>diagnostic is under way, please wait...</div>);
+                });
 
             });
 
-            document.on("keyup", function (evt) {
-                if(evt.code == "KeyF5") {
-                Window.this.load(location.href);
-                return true; // consume it
-                }
-            });
 
+        </script> 
+
+        <script type="module">
+            import LogonBox from "./main.js";
         </script>        
         
         
@@ -36,7 +43,7 @@
                 <div class="dot tooltip"><span class="tooltiptext">Client Service Status: Good</span></div>
                 <div class="dot tooltip"><span class="tooltiptext">Logon Agent Status: Good</span></div>
                 <div class="dot tooltip"><span class="tooltiptext">DAS Status: Good</span></div>
-                <button style="margin: 1px 5px;">?</button>
+                <button id="info" style="margin: 1px 5px;">?</button>
                 <div style="width:80px"></div>
         </div>     
     </body>
