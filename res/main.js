@@ -48,7 +48,9 @@ export class LogonBox extends Element {
             </button>
         </div>            
             
-            
+        <div style="text-align: center; margin: 0.4rem;">
+            <button id="quit" style="width:200px">Close</button>
+        </div>               
             
             
         </div>
@@ -92,6 +94,10 @@ export class LogonBox extends Element {
 
 //        var [sx,sy,sw,sh] = Window.this.screenBox("workarea","rect"); // gettting screen/monitor size
     }
+
+    ["on click at button#quit"](_event, _element) {
+        Window.this.close();
+    }    
 
 }
 
