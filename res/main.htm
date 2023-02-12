@@ -14,8 +14,14 @@
                 });
                 
                 document.on("click", "button#info", function() {
-                    console.log("info button click");
-                    document.$("div#message").patch(<div>diagnostic is under way, please wait...</div>);
+                    document.$("div#message").patch(<div#message>diagnostic is under way, ask native to do something. Please wait...</div>);
+                    const message = document.$("#message");
+                    const obj = {
+                        done: function (n) { message.patch(<div#message>done</div>);; },
+                    };
+                    
+                    Window.this.assetInterface.checkConnectionStatus(obj);
+
                 });
 
             });
