@@ -8,6 +8,13 @@ import OOBA from "./ooba.js";
 export class LogonBox extends Element {
     /**
      * Called when element is attached to the DOM tree
+     * 
+     *         <div style="text-align: center;">
+            <label for="password">Password:</label>
+
+            <input type="password" id="password" name="password" required
+                   minlength="4" maxlength="8" size="30"/>
+        </div>
      */
     componentDidMount() {
         this.render();
@@ -20,12 +27,7 @@ export class LogonBox extends Element {
                 <input type="text" size="30" novalue="Enter your login name" value={this.attributes["loginname"]} disabled/>
             </label>
             
-        <div style="text-align: center;">
-            <label for="password">Password:</label>
 
-            <input type="password" id="password" name="password" required
-                   minlength="4" maxlength="8" size="30"/>
-        </div>
 
         <div style="text-align: center; margin: 0.4rem;">
             <select name="Authenticators" id="authenticator-select">
