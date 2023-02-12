@@ -17,7 +17,7 @@
                     document.$("div#message").patch(<div#message>diagnostic is under way, ask native to do something. Please wait...</div>);
                     const message = document.$("#message");
                     const obj = {
-                        done: function (n) { message.patch(<div#message>done</div>);; },
+                        done: function (n) { message.innerHTML = "done"; },
                     };
                     
                     Window.this.assetInterface.checkConnectionStatus(obj);
