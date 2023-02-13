@@ -22,7 +22,7 @@ class frame : public sciter::window {
                     std::this_thread::sleep_for(std::chrono::milliseconds(100));
  //                   if (!progressCb.is_undefined()) progressCb.call(n);
                 }
-                if (!doneCb.is_undefined()) doneCb.call(100);
+                if (!doneCb.is_undefined()) doneCb.call("This is info returned by native code:  All good!");
 
              }).detach();
 

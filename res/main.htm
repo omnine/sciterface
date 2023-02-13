@@ -14,10 +14,10 @@
                 });
                 
                 document.on("click", "button#info", function() {
-                    document.$("div#message").patch(<div#message>diagnostic is under way, ask native to do something. Please wait... <div class="loader"></div></div>);
+                    document.$("div#message").patch(<div#message>Diagnostic is under way, ask native to do something. Please wait... <div class="loader"></div></div>);
                     const message = document.$("#message");
                     const obj = {
-                        done: function (n) { message.innerHTML = "done"; },
+                        done: function (nativeText) { message.innerHTML = nativeText; },
                     };
                     
                     Window.this.assetInterface.checkConnectionStatus(obj);
