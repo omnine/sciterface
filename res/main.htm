@@ -14,7 +14,7 @@
                 });
                 
                 document.on("click", "button#info", function() {
-                    document.$("div#message").patch(<div#message>diagnostic is under way, ask native to do something. Please wait...</div>);
+                    document.$("div#message").patch(<div#message>diagnostic is under way, ask native to do something. Please wait... <div class="loader"></div></div>);
                     const message = document.$("#message");
                     const obj = {
                         done: function (n) { message.innerHTML = "done"; },
@@ -43,7 +43,8 @@
                 <img#logo src="logo.png" class="resize_fit_center"/>
             </div>
             <logon-box loginname="nanoart"/>
-            <div#message /> 
+            <div#message />
+
         </div>
         <div class="footer"> 
                 <div class="dot tooltip"><span class="tooltiptext">Client Service Status: Good</span></div>
